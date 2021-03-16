@@ -1,0 +1,32 @@
+<h1>Event Binding</h1>
+<hr>
+<h2>1.Create a event binding component and</h2>
+    <ul>
+      <li>Use at least two inbuilt events (Example: click, keyup,etc..)</li>
+    </ul>
+
+    <p>a. click example</p>
+    <div>
+        
+      <button (click)="onClickMe()">Click me!</button>
+      {{clickMessage}}
+    </div>
+    <p> b. keyup example </p>
+    <div>
+        <label>Enter something: </label>
+      <input (keyup)="onKey($event)" />
+      <p>{{values}}</p>
+    </div>
+    <br />
+
+    <h2>2.Create two component (parent component and child component)</h2>
+    <app-example
+      [data]="data"
+      (valueChange)="displayCounter($event)"
+     
+    ></app-example>
+    <br /><br />
+    Value increment in Parent: {{parentCount}}
+    <br /><br />
+    <hr>
+   

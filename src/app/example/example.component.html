@@ -1,0 +1,11 @@
+<p>a. Pass data from parent component to child component ( using @Input)</p>
+<div class="data" *ngFor="let n of data">
+  
+    
+    
+    <p>{{ n.name }} {{n.age}} {{n.address}}</p>
+  
+</div>
+<p>b. Pass data from child component to parent component ( using @Output)</p>
+Button in child component:
+<button class="btn btn-primary" (click)="valueChanged()">Click me</button>
